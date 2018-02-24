@@ -24,6 +24,7 @@ wow.init();
         $('html, body').animate({scrollTop: $(hash).offset().top},800,function(){});
     });
 
+    // لعمل تأثير الدوائر
     $('.circle').circleProgress({
         startAngle: -Math.PI / 2,
         fill: {color: '#0575e6'}
@@ -31,6 +32,7 @@ wow.init();
             $(this).find('span').html(Math.round(stepValue * 100) + '%');
     });
 
+    // التأكد من صحة حقول الإدخال
     $(function(){
         $("#contact-form").validate();
     });
